@@ -14,15 +14,12 @@ public class Main {
     }
 
     public static int Diceroll() {
-        int max = 6;
-        int min = 1;
-        int dice = (int) (Math.random() * (max - min + 1)) + min;
-        return dice;
+        return getRandomNumber(1, 6);
 
     }
 
     public static int Wheelspin() {
-        return (int) (Math.random() * 8) + 1;
+        return getRandomNumber(1, 8);
 
     }
 
